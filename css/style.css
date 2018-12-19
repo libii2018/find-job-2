@@ -27,7 +27,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 140px;
+    padding: 20px 80px;
     box-shadow: 0px 4px 8px -3px rgba(17, 17, 17, .08);
 }
 .topbar-logo {
@@ -42,19 +42,21 @@ body {
 }
 
 .topbar-nav a {
-    padding-right: 65px;
+    padding-right: 45px;
 }
 
 #login {
     color: #ffffff;
     background: #2D56C7;
-    padding: 15px 63px;
+    padding: 10px 35px;
     border-radius: 35px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 #login:hover {
-    background: #ffffff;
-    color: #2D56C7;
+    background: #000000;
+    color: #ffffff;
 }
 
 
@@ -64,87 +66,100 @@ body {
 =============================================== */
 .secteur-1 {
     display: flex;
-    padding: 0 140px;
+    padding: 0 80px;
+    justify-content: space-between;
+    padding-bottom: 25px;
 }
 
 .secteur-1-left {
-    margin-top: 255px;
+    margin-top: 150px;
 }
 .titre-section-1{
-    margin-bottom: 75px;
-    width: 662px;
-    height: 126px;
+    margin-bottom: 50px;
+    width: 500px;
+    height: 65px;
 }
 .titre-section-1 h1{
+    line-height: 35px;
     color: #2D56C7;
-    font-size: 45px;
+    font-size: 30px;
     font-weight: 800;
 }
 
 .text-section-1 {
-    margin-bottom: 75px;
-    width: 595px;
-    height: 64px;
+    margin-bottom: 50px;
+    width: 450px;
+    height: 45px;
 }
 .text-section-1 p {
-    font-size: 24px;
+    font-size: 17px;
     color: #2D56C7;
 }
 input {
     position: relative;
     display: inline-block;
-    font-size: 20px;
+    font-size: 13px;
 }
 input[type="text"]{
-    width: 552px;
-    height: 70px;
+    width: 300px;
+    height: 45px;
     padding: 0 25px;
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 8px -3px rgba(17, 17, 17, .08);
+    border: 1px solid #2D56C7;
     border-radius: 50px 0 0 50px;
 }
 input[type="submit"]{
-    height: 70px;
+    width: 70px;
+    height: 45px;
     left: -37px;
     position: relative;
-    border: 1px solid #000000;
-    border-radius: 50px;
+    border: none;
+    border-radius: 40px;
     cursor: pointer;
     background: #063cd1;
     color: #ffffff;
 }
+input[type="submit"]:hover{
+    background: #000000;
+    color: #ffffff;
+}
 
 .secteur-1-right{
-    height: 147px;
+    width: 560px;
+    height: 530px;
+    margin-top: 50px;
 }
 img {
-    width: 830px;
-    height: 640px;
+    width: 100%;
+    height: 100%;
     
 }
+
+
+/* ============================================
+                Section-2
+=============================================== */
+
 .section-2 {
     background: #063cd1;
-    height: 350px;
-}
-.section-2-container{
-    padding: 0 80px;
-   
+    height: 275px;
+    padding: 50px 50px 120px 50px;
 }
 .section-2-cardre {
     background: #ffffff;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
-    height: 700px;
+    height: 500px;
     padding: 15px 50px;
-    margin-top: 100px;
 }
 .section-2-titre {
-    margin-top: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #2D56C7;
+    text-align: center;
 }
 .section-2-cardre img{
-    width: 200px;
-    height: 200px;
-    margin: 20px;
+    width: 150px;
+    height: 150px;
 }
 
 
