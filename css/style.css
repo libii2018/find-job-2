@@ -1,0 +1,322 @@
+/* =============================================
+    Default Theme
+    --------------------------------------------
+    Fonts: Poppins & Open Sans
+    --------------------------------------------
+    Colors:
+        White Smoke:                 #e3e3e3
+        Blue-1:                      #063cd1
+        Blue-2:                      #7593e5
+=============================================== */
+
+/* ============================================
+                Body,Html
+=============================================== */
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+
+/* ============================================
+                Topbar
+=============================================== */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 140px;
+    box-shadow: 0px 4px 8px -3px rgba(17, 17, 17, .08);
+}
+.topbar-logo {
+    font-size: 18px;
+    font-weight: 1000;
+}
+.topbar a{
+    text-decoration: none;
+    color:  #2D56C7;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.topbar-nav a {
+    padding-right: 65px;
+}
+
+#login {
+    color: #ffffff;
+    background: #2D56C7;
+    padding: 15px 63px;
+    border-radius: 35px;
+}
+
+#login:hover {
+    background: #ffffff;
+    color: #2D56C7;
+}
+
+
+
+/* ============================================
+                Secteur-1
+=============================================== */
+.secteur-1 {
+    display: flex;
+    padding: 0 140px;
+}
+
+.secteur-1-left {
+    margin-top: 255px;
+}
+.titre-section-1{
+    margin-bottom: 75px;
+    width: 662px;
+    height: 126px;
+}
+.titre-section-1 h1{
+    color: #2D56C7;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.text-section-1 {
+    margin-bottom: 75px;
+    width: 595px;
+    height: 64px;
+}
+.text-section-1 p {
+    font-size: 24px;
+    color: #2D56C7;
+}
+input {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+}
+input[type="text"]{
+    width: 552px;
+    height: 70px;
+    padding: 0 25px;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 8px -3px rgba(17, 17, 17, .08);
+    border-radius: 50px 0 0 50px;
+}
+input[type="submit"]{
+    height: 70px;
+    left: -37px;
+    position: relative;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    cursor: pointer;
+    background: #063cd1;
+    color: #ffffff;
+}
+
+.secteur-1-right{
+    height: 147px;
+}
+img {
+    width: 830px;
+    height: 640px;
+    
+}
+.section-2 {
+    background: #063cd1;
+    height: 350px;
+}
+.section-2-container{
+    padding: 0 80px;
+   
+}
+.section-2-cardre {
+    background: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    height: 700px;
+    padding: 15px 50px;
+    margin-top: 100px;
+}
+.section-2-titre {
+    margin-top: 50px;
+}
+.section-2-cardre img{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+
+
+/* ============================================
+                Section-3
+=============================================== */
+.section-3 {
+    margin-top: 600px;
+    box-shadow: 0px 4px 8px -3px rgba(0, 0, 0, 0.1);
+}
+.section-3 h3 {
+    text-align: center;
+}
+.card {
+    width: 300px;
+    position: relative;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin: 45px;
+}
+.card p {
+    color: black;
+}
+.card-header {
+    height: 200px;
+    overflow: hidden;
+}
+
+.section-3 .col-md-4 {
+    padding: 0;
+
+}
+.section-3 .container {
+    padding-bottom: 100px;
+}
+.card-header img {
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.card-title {
+    height: 50px;
+    padding: 40px 0 40px 20px;
+    position: relative;
+}
+.card-title img {
+    height: 28px;
+    margin-left: 5px;
+    position: absolute;
+    top: 38px;
+    right: 60px;
+}
+.card-title span{
+    position: absolute;
+    top: 16px;
+    right: 0;
+    margin-top: 10px;
+    background: #063cd1;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 800;
+    padding: 14px 14px 14px 16px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 10px;
+}
+.card-description {
+    height: 125px;
+    padding: 10px 40px 40px 20px;
+}
+.card-description h6 {
+    font-size: 15px;
+    font-weight: 750;
+}
+.card-footer {
+    height: 50px;
+    position: relative;
+}
+.card-footer span {
+    background: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    border-radius: 35px;
+    color: #063cd1;
+}
+
+
+/* ============================================
+                Section-Templated
+=============================================== */
+.section {
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+.section-image img {
+    height: 100%;
+    width: 100%;
+}
+.section-text {
+    padding: 20px 50px;
+}
+.titre-section {
+    padding-bottom: 30px;
+}
+.text-1-section {
+    padding-bottom: 60px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.text-2-section p {
+    color: black;
+}
+
+
+/* ============================================
+                Section-7
+=============================================== */
+.section-7 {
+    background: #063cd1;
+    padding: 25px;
+}
+.section-7 p {
+    color: #ffffff;
+}
+.section-7-text {
+    margin-top: 50px;
+}
+.section-7-text p {
+    margin-bottom: 10px;
+}
+.section-7-button {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.section-7-button a {
+    background: #ffffff;
+   
+    padding: 15px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+
+/* ============================================
+                Footer
+=============================================== */
+.footer {
+    margin: 80px 0;
+}
+.footer h5 {
+    margin-bottom: 35px;
+    font-weight: 700;
+}
+.footer h5 a{
+    color: black;
+    text-decoration: none;
+}
+.footer p a{
+    color: black;
+    text-decoration: none;
+}
+.copy {
+    padding: 70px 0 15px 0;
+}
+.copy p {
+    color: black
+}
+.copy p span {
+    font-weight: 600;
+}
