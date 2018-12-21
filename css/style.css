@@ -96,11 +96,6 @@ body {
     font-size: 17px;
     color: #2D56C7;
 }
-input {
-    position: relative;
-    display: inline-block;
-    font-size: 13px;
-}
 input[type="text"]{
     width: 300px;
     height: 45px;
@@ -108,20 +103,32 @@ input[type="text"]{
     border: 1px solid #2D56C7;
     border-radius: 50px 0 0 50px;
 }
-input[type="submit"]{
+.search-box{
+    position: relative;
+    display: flex;
+    width: 35px;
+    height: 250px;
+}
+.search{
+    position: relative;
     width: 70px;
     height: 45px;
-    left: -37px;
-    position: relative;
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
+    left: -8%;
     background: #063cd1;
+    text-align: center;
+    line-height: 57px;
     color: #ffffff;
+    font-size: 9px;
+    border-radius: 50px;
+
 }
-input[type="submit"]:hover{
+.search:hover{
     background: #000000;
-    color: #ffffff;
+    cursor: pointer;
+}
+form {
+    display: flex;
+    width: 380px;
 }
 
 .secteur-1-right{
@@ -142,7 +149,7 @@ img {
 
 .section-2 {
     position: relative;
-    background: #063cd1;
+    background: #2D56C7;
     height: 275px;
     padding: 50px 50px 120px 50px;
 }
@@ -197,10 +204,12 @@ img {
                 Section-3
 =============================================== */
 .section-3 {
-    margin-top: 600px;
+    margin-top: 400px;
     box-shadow: 0px 4px 8px -3px rgba(0, 0, 0, 0.1);
+    
 }
 .section-3 h3 {
+    color: #2D56C7;
     text-align: center;
 }
 .card {
@@ -288,7 +297,7 @@ img {
     padding: 20px 80px;
     display: flex;
     justify-content: space-between;
-    margin-top: 140px;
+    margin-top: 110px;
 }
 .section-4-image {
     width: 320px;
@@ -310,7 +319,7 @@ img {
     color: #2D56C7;
 }
 .text-2-section-4 p {
-    line-height: 35px;
+    line-height: 2em;
 }
 
 
@@ -342,7 +351,7 @@ img {
     color: #2D56C7;
 }
 .text-2-section-5 p {
-    line-height: 35px;
+    line-height: 2em;
 }
 
 
@@ -356,7 +365,7 @@ img {
     margin-top: 140px;
 }
 .section-6-image {
-    width: 500px;
+    width: 480px;
 }
 .section-6-text {
    width: 434px;
@@ -374,20 +383,21 @@ img {
     color: #2D56C7;
 }
 .text-2-section-6 p {
-    line-height: 35px;
+    line-height: 2em;
 }
 
 /* ============================================
                 Section-7
 =============================================== */
 .section-7 {
-    background: #063cd1;
+    background: #2D56C7;
     padding: 50px;
     text-align: center;
     line-height: 50px;
 }
 .section-7 .test-1 {
     font-size: 27px;
+    font-weight: 600;
     color: #ffffff;
 }
 .section-7-text .test-2{
@@ -437,4 +447,127 @@ footer a{
 }
 .end-footer span{
     font-weight: 700;
+}
+
+
+@media screen and (max-width: 700px) {
+
+    /* ============================================
+                    Topbar
+    =============================================== */
+    .topbar{
+        text-align: center;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        padding: 90px 0;
+    }
+    .topbar-logo{
+        margin-left: -34px;
+    }
+    .topbar a{
+        font-size: 35px;
+    }
+    .topbar-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .topbar-nav a {
+        margin-top: 45px;
+        font-size: 20px;
+    }
+    #login{
+        margin-left: -32px;
+        margin
+    }
+
+    /* ============================================
+                Section-1
+    =============================================== */
+    .secteur-1{
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .search{
+        float: left;
+    }
+
+
+    /* ============================================
+                Section-2
+    =============================================== */
+    .section-2{
+        margin-bottom: 25px;
+    }
+    .img-part1{
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .img-part2{
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    /* ============================================
+                Section-3
+    =============================================== */
+    .section-3{
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 961px;
+    }
+
+    /* ============================================
+                Section-4
+    =============================================== */
+    .section-4{
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-4-image{
+        margin: auto 0;
+    }
+    .section-4-image{
+        margin-bottom: 80px;
+    }
+
+    /* ============================================
+                Section-5
+    =============================================== */
+    .section-5{
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .section-5-image{
+        margin-bottom: 80px;
+    }
+
+    /* ============================================
+                Section-6
+    =============================================== */
+    .section-6{
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+    .section-6-image{
+        margin-bottom: 80px;
+    }
+
+    /* ============================================
+                Footer
+    =============================================== */
+    .begin-footer{
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
 }
