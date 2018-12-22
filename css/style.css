@@ -18,6 +18,7 @@
 body {
     margin: 0;
     color: #707070;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -44,6 +45,7 @@ body {
 
 .topbar-nav a {
     padding-right: 45px;
+    transition: all 0.3s ease-in-out;
 }
 
 #login {
@@ -59,7 +61,14 @@ body {
     background: #000000;
     color: #ffffff;
 }
-
+.menu-toggle {
+    color: #2D56C7;
+    float: right;
+    line-height: 50px;
+    font-size: 26px;
+    cursor: pointer;
+    display: none;
+}
 
 
 /* ============================================
@@ -69,12 +78,8 @@ body {
     display: flex;
     padding: 0 80px;
     justify-content: space-between;
-    padding-bottom: 25px;
 }
 
-.secteur-1-left {
-    margin-top: 150px;
-}
 .titre-section-1{
     margin-bottom: 50px;
     width: 500px;
@@ -86,7 +91,10 @@ body {
     font-size: 30px;
     font-weight: 800;
 }
-
+.secteur-1-left {
+    
+height: 330px;
+}
 .text-section-1 {
     margin-bottom: 50px;
     width: 450px;
@@ -452,36 +460,39 @@ footer a{
 
 
 @media screen and (max-width: 700px) {
+    header{
+        padding: 0 20px;
+        /*margin-bottom: 250px;*/
+    }
+    .menu-toggle{
+        display: block;
+    }
+    header nav{
 
-    /* ============================================
-                    Topbar
-    =============================================== */
-    .topbar{
-        text-align: center;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-        padding: 90px 0;
+        position: absolute;
+        width: 100%;
+        height: 45px;
+        background: #ffffff;
+        top: 50px;
+        left: 0;
+        transition: 0.5s;
     }
-    .topbar-logo{
-        margin-left: -34px;
-    }
-    .topbar a{
-        font-size: 35px;
-    }
-    .topbar-nav{
+    .topbar-nav {
+        margin-top: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        visibility: hidden;
     }
     .topbar-nav a {
-        margin-top: 45px;
-        font-size: 20px;
-    }
-    #login{
-        margin-left: -32px;
-    }
+        padding: 20px 0;
+        font-size: 18px;
+        margin: 10px auto;
 
+    }
+    .topbar-logo {
+        font-size: 20px !important;
+    }
     /* ============================================
                 Section-1
     =============================================== */
@@ -489,12 +500,14 @@ footer a{
         justify-content: space-between;
         flex-direction: column-reverse;
         align-items: center;
+        padding: 0;
     }
     .secteur-1-right{
         width: 100%;
     }
     .secteur-1-left{
         width: 100%;
+        padding: 0 80px;
     }
     .search{
         float: left;
@@ -559,7 +572,6 @@ footer a{
     .section-4-image{
         margin: auto 0;
         width: 100%;
-        margin-bottom: 80px;
     }
     .section-4-image{
         
@@ -570,6 +582,10 @@ footer a{
         height: auto;
     }
 
+    .text-1-section-4{
+        padding-bottom: 0;
+    }
+
     /* ============================================
                 Section-5
     =============================================== */
@@ -577,9 +593,9 @@ footer a{
         justify-content: space-between;
         flex-direction: column-reverse;
         align-items: center;
+        margin: 0;
     }
     .section-5-image{
-        margin-bottom: 80px;
         width: 100%;
     }
     .section-5-text{
@@ -592,6 +608,7 @@ footer a{
     .text-1-section-5{
         width: 100%;
         height: auto;
+        padding-bottom: 0;
     }
     .text-2-section-5{
         width: 100%;
@@ -605,7 +622,7 @@ footer a{
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 80px;
+        margin: 0;
     }
     .section-6-image{
         margin-bottom: 80px;
@@ -621,10 +638,20 @@ footer a{
     .text-1-section-6{
         width: 100%;
         height: auto;
+        padding-bottom: 0;
     }
     .text-2-section-6{
         width: 100%;
         height: auto;
+    }
+
+
+     /* ============================================
+                section-7
+    =============================================== */
+
+    .section-7 {
+        margin: 0;
     }
     /* ============================================
                 Footer
@@ -633,5 +660,27 @@ footer a{
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 438px) {
+    .section-7-button {
+        width: 100%;
+        height: 20px;;
+        font-size: 15px;
+        padding-left: 20px;
+    }
+    .section-7-button a {
+        background: #ffffff;
+        padding: 15px 20px;
+        border-radius: 25px;
+        text-decoration: none;
+        margin: auto 0;
+    }
+    
+    .section-7-button a:hover{
+        background: #000000;
+        color: #ffffff;
     }
 }
