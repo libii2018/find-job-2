@@ -92,8 +92,8 @@ body {
     font-weight: 800;
 }
 .secteur-1-left {
-    
-height: 330px;
+    padding-top: 115px;
+    height: 330px;
 }
 .text-section-1 {
     margin-bottom: 50px;
@@ -467,8 +467,13 @@ footer a{
     .menu-toggle{
         display: block;
     }
+    .topbar{
+        padding: 20px 40px;
+    }
+    .topbar a{
+        margin-right: 115px;
+    }
     header nav{
-
         position: absolute;
         width: 100%;
         height: 45px;
@@ -493,6 +498,9 @@ footer a{
     .topbar-logo {
         font-size: 20px !important;
     }
+
+
+
     /* ============================================
                 Section-1
     =============================================== */
@@ -500,14 +508,15 @@ footer a{
         justify-content: space-between;
         flex-direction: column-reverse;
         align-items: center;
-        padding: 0;
+        padding: 0 20px;
+        margin-bottom: 140px;
     }
     .secteur-1-right{
         width: 100%;
+        height: auto;
     }
     .secteur-1-left{
         width: 100%;
-        padding: 0 80px;
     }
     .search{
         float: left;
@@ -525,7 +534,11 @@ footer a{
     input[type="text"]{
         width: 140px;
     }
+    .text-section-1 p {
 
+        font-size: 80%;
+    
+    }
     /* ============================================
                 Section-2
     =============================================== */
@@ -534,6 +547,7 @@ footer a{
     .section-2-cardre{
         width: 100%;
         height: auto;
+        padding: 0 38px;
     }
     .section-2-cardre img{
         margin: 20px 0;
@@ -557,7 +571,7 @@ footer a{
         justify-content: space-between;
         flex-direction: column-reverse;
         align-items: center;
-        margin-top: 1325px
+        margin-top: 1325px;
     }
 
     /* ============================================
@@ -568,6 +582,7 @@ footer a{
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
+        padding: 0 30px;
     }
     .section-4-image{
         margin: auto 0;
@@ -580,12 +595,16 @@ footer a{
     .section-4-text{
         width: 100%;
         height: auto;
+        padding: 0;
     }
 
     .text-1-section-4{
         padding-bottom: 0;
     }
-
+    .text-2-section-4 p{
+        font-size: 80%;
+    }
+    
     /* ============================================
                 Section-5
     =============================================== */
@@ -593,6 +612,7 @@ footer a{
         justify-content: space-between;
         flex-direction: column-reverse;
         align-items: center;
+        padding: 0 30px;
         margin: 0;
     }
     .section-5-image{
@@ -613,6 +633,7 @@ footer a{
     .text-2-section-5{
         width: 100%;
         height: auto;
+        font-size: 80%;
     }
 
     /* ============================================
@@ -622,14 +643,17 @@ footer a{
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
+        padding: 0 30px;
         margin: 0;
     }
     .section-6-image{
         margin-bottom: 80px;
         width: 100%;
+        margin: 0;
     }
     .section-6-text{
         width: auto;
+        margin: 0;
     }
     .titre-section-6{
         width: 100%;
@@ -643,6 +667,7 @@ footer a{
     .text-2-section-6{
         width: 100%;
         height: auto;
+        font-size: 80%;
     }
 
 
@@ -651,7 +676,14 @@ footer a{
     =============================================== */
 
     .section-7 {
-        margin: 0;
+        margin: 15px 0;
+        padding: 10px 21px; 
+    }
+    .section-7 .test-1{
+        font-size: 150%;
+    }
+    .section-7-text .test-2{
+        font-size: 65%;
     }
     /* ============================================
                 Footer
@@ -661,6 +693,8 @@ footer a{
         flex-direction: column;
         align-items: center;
         margin: 0;
+        padding: 62px 0px;
+        font-size: 80%;
     }
 }
 
@@ -668,7 +702,7 @@ footer a{
     .section-7-button {
         width: 100%;
         height: 20px;;
-        font-size: 15px;
+        font-size: 80%;
         padding-left: 20px;
     }
     .section-7-button a {
@@ -682,5 +716,14 @@ footer a{
     .section-7-button a:hover{
         background: #000000;
         color: #ffffff;
+    }
+}
+
+
+@media screen and (max-width: 317px) {
+    .section-7-button {
+        width: 100%;
+        height: 20px;
+        padding-left: 0;
     }
 }
