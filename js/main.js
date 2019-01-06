@@ -23,3 +23,57 @@ let toggleNav = function() {
         toggleNavStatus = false;
     }
 }
+
+
+
+
+
+
+class Careusel {
+
+    /**
+     * 
+     * @param {HTMLElement} element 
+     * @param {Object} option 
+     * @param {Object} option.slidesToscroll Nombre d'elements a faire defiler
+     * @param {object} options.slidesVisible Nombre d'elements visible dans un slide
+     */
+
+    constructor (element, option = {}) {
+        this.element = element
+        this.option = Object.assign({}, {
+            slidesToscroll: 1, 
+            slidesVisible: 1
+        },options)
+        let root = this.createDivWithClass('carousel') 
+        let container = this.createDivWithClass('carousel__container')
+        root.appendChild(container)
+        this.element.appendChild(root)
+    }
+
+
+    /**
+     * 
+     * @param {string} className 
+     * @returns {HTMLElement}
+     */
+
+    createDivWithClass (className) {
+        let div = document.createElement('div')
+        div.setAttribute('class', className)
+        return div
+    }
+}
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    new Careusel(document.querySelector('#carousel1'), {
+        slidesToscroll: 3,
+        slidesVisible: 3
+    })
+
+})
+
